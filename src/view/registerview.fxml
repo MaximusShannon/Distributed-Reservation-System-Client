@@ -10,26 +10,25 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
    <children>
       <Text fill="WHITE" layoutX="190.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tennis Court Reservation System">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="usernameTextField" layoutX="306.0" layoutY="124.0" prefHeight="34.0" prefWidth="245.0" promptText="First Name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-      <TextField fx:id="usernameTextField1" layoutX="306.0" layoutY="171.0" prefHeight="34.0" prefWidth="245.0" promptText="Second Name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-      <TextField fx:id="usernameTextField11" layoutX="306.0" layoutY="216.0" prefHeight="34.0" prefWidth="245.0" promptText="Email" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-      <TextField fx:id="usernameTextField111" layoutX="306.0" layoutY="261.0" prefHeight="34.0" prefWidth="245.0" promptText="Mobile Number" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <TextField fx:id="firstNameText" layoutX="306.0" layoutY="124.0" prefHeight="34.0" prefWidth="245.0" promptText="First Name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <TextField fx:id="secondNameText" layoutX="306.0" layoutY="171.0" prefHeight="34.0" prefWidth="245.0" promptText="Second Name" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <TextField fx:id="emailText" layoutX="306.0" layoutY="216.0" prefHeight="34.0" prefWidth="245.0" promptText="Email" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <TextField fx:id="mobileNumberText" layoutX="306.0" layoutY="261.0" prefHeight="34.0" prefWidth="245.0" promptText="Mobile Number" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
       <Text fill="WHITE" layoutX="347.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We just need some details">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <PasswordField fx:id="passwordTextField" layoutX="306.0" layoutY="309.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
-      <PasswordField fx:id="passwordTextField1" layoutX="306.0" layoutY="358.0" prefHeight="34.0" prefWidth="245.0" promptText="Retype Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
-      <Button fx:id="loginButton" layoutX="306.0" layoutY="411.0" mnemonicParsing="false"  prefHeight="48.0" prefWidth="245.0" stylesheets="@css/Sharp.css" text="Register" textFill="WHITE">
+      <PasswordField fx:id="passwordOne" layoutX="306.0" layoutY="309.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
+      <PasswordField fx:id="passwordTwo" layoutX="306.0" layoutY="358.0" prefHeight="34.0" prefWidth="245.0" promptText="Retype Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
+      <Button fx:id="registerButton" layoutX="306.0" layoutY="411.0" mnemonicParsing="false" onAction="#sendRegisterRequest" prefHeight="48.0" prefWidth="245.0" stylesheets="@css/Sharp.css" text="Register" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -37,21 +36,6 @@
       <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="526.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/pencil.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="634.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/tenis_racket.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="685.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
-         <image>
-            <Image url="@images/tenis_racket.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="162.0" layoutX="93.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/swimming_pool.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="14.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
@@ -69,5 +53,41 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Text fx:id="whoopsMessage" fill="WHITE" layoutX="596.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whooops, please check what you have entered." visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="hintMessage" fill="#00ff2f" layoutX="610.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HINT:  Fields cannot be empty, the email must contain the characters @ and . and the passwords must match" visible="false" wrappingWidth="197.626953125">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="290.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="290.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="290.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="290.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="290.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="existsText" fill="WHITE" layoutX="23.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User with that email already exists, please login." visible="false" />
    </children>
 </AnchorPane>

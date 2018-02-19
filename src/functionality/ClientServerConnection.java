@@ -1,7 +1,9 @@
 package functionality;
 
+import models.ResponseMessage;
 import models.User;
 
+import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
@@ -42,5 +44,30 @@ public class ClientServerConnection {
         }
 
     }
-    
+
+    public String startRegisterRequest(User userInformation){
+
+        String response = "";
+
+        try{
+            clientSocket = new Socket(host, 4045);
+
+            ObjectOutputStream outputToServer = new ObjectOutputStream(clientSocket.getOutputStream());
+            ObjectInputStream inputFromServer = new ObjectInputStream(clientSocket.getInputStream());
+
+            outputToServer.writeObject(userInformation);
+
+            ResponseMessage message = (ResponseMessage) inputFromServer.readObject();
+            response = message.getMessage();
+
+            if(response.equals("USER_EXISTS")){
+
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return response;
+    }
 }
