@@ -2,16 +2,10 @@ package models;
 
 import models.User;
 
-public class Session {
+import java.io.Serializable;
 
-    static final long serialVersionUID = 3L;
-    private User user;
-    private String sessionToken;
+public class Session implements Serializable {
 
-    public Session(User user, String sessionToken) {
-        this.user = user;
-        this.sessionToken = sessionToken;
-    }
-
+  public static User userSession;
 
 }

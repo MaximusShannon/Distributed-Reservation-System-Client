@@ -53,8 +53,6 @@ public class RegisterController {
     @FXML
     private Text registrationSuccesful;
 
-
-
     @FXML
     private void sendRegisterRequest(){
 
@@ -72,6 +70,7 @@ public class RegisterController {
             if(response.equals("USER_REGISTERED")){
                 registrationSuccesful.setVisible(true);
                 closeStage();
+                openLoginStage();
             }
 
         }
@@ -87,7 +86,6 @@ public class RegisterController {
             loginStage.setTitle("Hello World");
             loginStage.setScene(new Scene(root, 900, 500));
             loginStage.show();
-            closeStage();
 
         }catch (Exception e){
             e.printStackTrace();

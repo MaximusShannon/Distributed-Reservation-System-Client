@@ -1,13 +1,20 @@
 package controllers;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import models.Session;
+
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class MainViewController {
+public class MainViewController implements Initializable {
 
     @FXML
     private Button profileButton;
@@ -17,9 +24,17 @@ public class MainViewController {
     private Button bookFacilityButton;
     @FXML
     private Button myReservationsButton;
-
+    @FXML
+    private Text userNameLabel;
     @FXML
     private AnchorPane injectablePane;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb){
+
+        userNameLabel.setText(Session.userSession.getfName() + " " + Session.userSession.getsName());
+
+    }
 
     @FXML
     private void loadProfileView() throws IOException{

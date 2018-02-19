@@ -1,6 +1,7 @@
 package functionality;
 
 import models.ResponseMessage;
+import models.Session;
 import models.User;
 
 import java.io.ObjectInput;
@@ -23,7 +24,7 @@ public class ClientServerConnection {
     * ObjectOutputStream will send a login request object to the server
     * ObjectInputStream will take in the response for the server
     * */
-    public void startClientLoginRequest(LoginRequest userInformation){
+    public User startClientLoginRequest(LoginRequest userInformation){
 
         User authenticatedUser = null;
 
@@ -34,14 +35,15 @@ public class ClientServerConnection {
             ObjectInputStream inputFromServer = new ObjectInputStream(clientSocket.getInputStream());
 
             ouputToServer.writeObject(userInformation);
-            authenticatedUser = (User) inputFromServer.readObject();
-            System.out.println(authenticatedUser.getfName());
 
-            System.out.println("Login Request Sent");
+            authenticatedUser = (User) inputFromServer.readObject();
+
 
         }catch (Exception e){
             e.printStackTrace();
         }
+
+        return authenticatedUser;
 
     }
 
@@ -59,10 +61,6 @@ public class ClientServerConnection {
 
             ResponseMessage message = (ResponseMessage) inputFromServer.readObject();
             response = message.getMessage();
-
-            if(response.equals("USER_EXISTS")){
-
-            }
 
         }catch (Exception e){
             e.printStackTrace();

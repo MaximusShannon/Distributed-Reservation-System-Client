@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import models.Session;
+import models.User;
 
 public class LoginController {
 
@@ -33,6 +35,8 @@ public class LoginController {
     @FXML
     public void getLoginDetails(){
 
+        User authenticatedUser;
+
         clientServerConnection = new ClientServerConnection();
 
         username = usernameTextField.getText();
@@ -40,8 +44,28 @@ public class LoginController {
 
         loginRequest = new LoginRequest(username, password);
         System.out.println("Sending Login Request");
-        clientServerConnection.startClientLoginRequest(loginRequest);
+        authenticatedUser = clientServerConnection.startClientLoginRequest(loginRequest);
 
+        if(authenticatedUser != null){
+            Session.userSession = authenticatedUser;
+            openMainMenu();
+            closeStage();
+        }
+    }
+
+    private void openMainMenu(){
+        try{
+            Stage mainMenuStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("../view/mainmenu.fxml"));
+            mainMenuStage.setTitle("Hello World");
+            mainMenuStage.setScene(new Scene(root, 1200, 800));
+            mainMenuStage.show();
+            closeStage();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @FXML

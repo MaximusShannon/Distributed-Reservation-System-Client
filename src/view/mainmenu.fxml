@@ -59,7 +59,7 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Text>
-            <Button fx:id="myReservationsButton" onAction="#loadUserReservationsView" layoutX="5.0" layoutY="281.0" mnemonicParsing="false" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
+            <Button fx:id="myReservationsButton" layoutX="5.0" layoutY="281.0" mnemonicParsing="false" onAction="#loadUserReservationsView" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -81,7 +81,7 @@
             </Button>
          </children>
       </Pane>
-      <Text fill="#292e37" layoutX="946.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+      <Text fx:id="userNameLabel" fill="#292e37" layoutX="906.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
          <font>
             <Font name="Segoe UI Italic" size="18.0" />
          </font>
