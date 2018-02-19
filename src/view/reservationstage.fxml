@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #003C00;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReservationController">
+   <children>
+      <Pane prefHeight="115.0" prefWidth="1000.0" style="-fx-background-color: #004C00;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Court Reservations">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="15.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="145.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="289.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="427.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="572.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="706.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="886.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="170.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="327.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="455.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="588.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="733.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="907.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="mondayButton" layoutX="7.0" layoutY="60.0" mnemonicParsing="false" onAction="#loadCalender" opacity="0.0" prefHeight="49.0" prefWidth="81.0" stylesheets="@css/reservation_front_styles.css" />
+            <ImageView fitHeight="16.0" fitWidth="48.0" layoutX="40.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@images/arrow4871.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="137.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="81.0" stylesheets="@css/reservation_front_styles.css" />
+            <Button layoutX="287.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="99.0" stylesheets="@css/reservation_front_styles.css" />
+            <Button layoutX="423.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="81.0" stylesheets="@css/reservation_front_styles.css" />
+            <Button layoutX="564.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="65.0" stylesheets="@css/reservation_front_styles.css" />
+            <Button layoutX="701.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="81.0" stylesheets="@css/reservation_front_styles.css" />
+            <Button layoutX="875.0" layoutY="58.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="81.0" stylesheets="@css/reservation_front_styles.css" />
+         </children>
+      </Pane>
+      <Pane layoutY="113.0" prefHeight="50.0" prefWidth="1000.0">
+         <children>
+            <Text fill="WHITE" layoutX="138.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9AM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="237.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10AM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="349.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11AM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="470.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12PM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="584.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1PM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="559.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="827.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3PM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="925.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4PM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="700.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2PM">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="34.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Court No.">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="calenderPane" layoutY="163.0" prefHeight="435.0" prefWidth="1000.0" />
+   </children>
+</Pane>

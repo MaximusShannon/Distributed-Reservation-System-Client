@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="75.0" prefWidth="870.0" style="-fx-border-color: #3A4049;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Text fill="#0967a5" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RerservationID" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="104.0" layoutY="6.0" prefHeight="64.0" prefWidth="3.0" style="-fx-background-color: #0967a5;" />
+      <Text fill="#0967a5" layoutX="117.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserID" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="206.0" layoutY="6.0" prefHeight="64.0" prefWidth="3.0" style="-fx-background-color: #0967a5;" />
+      <Text fill="#0967a5" layoutX="220.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FacilityID" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="309.0" layoutY="6.0" prefHeight="64.0" prefWidth="3.0" style="-fx-background-color: #0967a5;" />
+      <Text fill="#0967a5" layoutX="319.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FacilityName" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="408.0" layoutY="6.0" prefHeight="64.0" prefWidth="3.0" style="-fx-background-color: #0967a5;" />
+      <Text fill="#0967a5" layoutX="420.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="509.0" layoutY="6.0" prefHeight="64.0" prefWidth="3.0" style="-fx-background-color: #0967a5;" />
+      <Button layoutX="677.0" layoutY="16.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="82.0" stylesheets="@css/Sharp.css" text="UPDATE" textFill="WHITE" />
+      <Button layoutX="774.0" layoutY="14.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="82.0" style="-fx-background-color: #292E37;" text="DELETE" textFill="WHITE" />
+      <Text fill="#292e37" layoutX="18.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="117.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="224.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="323.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="420.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#0967a5" layoutX="524.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" wrappingWidth="90.419921875">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#292e37" layoutX="528.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="82.07421875">
+         <font>
+            <Font name="Segoe UI Italic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
