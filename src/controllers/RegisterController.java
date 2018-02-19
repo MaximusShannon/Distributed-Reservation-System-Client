@@ -4,10 +4,15 @@ package controllers;
 import functionality.ClientServerConnection;
 import functionality.Validator;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import models.User;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
@@ -21,6 +26,8 @@ public class RegisterController {
     private User userRegistering;
     private ClientServerConnection clientServerConnection;
 
+    @FXML
+    private AnchorPane registerStage;
     @FXML
     private TextField firstNameText;
     @FXML
@@ -36,11 +43,16 @@ public class RegisterController {
     @FXML
     private Button registerButton;
     @FXML
+    private Button openLoginStage;
+    @FXML
     private Text whoopsMessage;
     @FXML
     private Text hintMessage;
     @FXML
     private Text existsText;
+    @FXML
+    private Text registrationSuccesful;
+
 
 
     @FXML
@@ -57,9 +69,35 @@ public class RegisterController {
 
                 existsText.setVisible(true);
             }
-            // if USER_REGISTERED
-            // CLOSE THIS STAGE AND LOAD THE LOGIN STAGE.
+            if(response.equals("USER_REGISTERED")){
+                registrationSuccesful.setVisible(true);
+                closeStage();
+            }
+
         }
+    }
+
+    @FXML
+    private void openLoginStage(){
+
+        try{
+            Stage loginStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("../view/login.fxml"));
+            loginStage.setTitle("Hello World");
+            loginStage.setScene(new Scene(root, 900, 500));
+            loginStage.show();
+            closeStage();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    private void closeStage(){
+
+        Stage stage = (Stage) registerStage.getScene().getWindow();
+        stage.close();
     }
 
     private void buildUserObject(){

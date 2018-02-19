@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+<AnchorPane fx:id="registerStage" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
    <children>
       <Text fill="WHITE" layoutX="190.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tennis Court Reservation System">
          <font>
@@ -48,7 +48,7 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Button layoutX="16.0" layoutY="412.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="239.0">
+      <Button fx:id="openLoginStage" onAction="#openLoginStage" layoutX="16.0" layoutY="412.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="239.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -89,5 +89,6 @@
          </font>
       </Text>
       <Text fx:id="existsText" fill="WHITE" layoutX="23.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User with that email already exists, please login." visible="false" />
+      <Text fx:id="registrationSuccesful" fill="WHITE" layoutX="329.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Succesful - &gt; Redirecting" visible="false" />
    </children>
 </AnchorPane>

@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class LoginController {
@@ -17,6 +18,9 @@ public class LoginController {
     private LoginRequest loginRequest;
     private ClientServerConnection clientServerConnection;
 
+
+    @FXML
+    private Pane loginStage;
     @FXML
     private TextField usernameTextField;
     @FXML
@@ -50,10 +54,17 @@ public class LoginController {
             registerStage.setTitle("Hello World");
             registerStage.setScene(new Scene(root, 900, 500));
             registerStage.show();
+            closeStage();
 
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    private void closeStage(){
+
+        Stage stage = (Stage) loginStage.getScene().getWindow();
+        stage.close();
     }
 
 
