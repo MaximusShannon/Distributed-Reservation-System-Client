@@ -11,16 +11,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #292E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
       <Text fill="WHITE" layoutX="190.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tennis Court Reservation System">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Text>
-      <TextField layoutX="327.0" layoutY="166.0" prefHeight="34.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
-      <PasswordField layoutX="327.0" layoutY="233.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
+      <TextField fx:id="usernameTextField" layoutX="327.0" layoutY="166.0" prefHeight="34.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: #38444C; -fx-text-fill: White;" />
+      <PasswordField fx:id="passwordTextField" layoutX="327.0" layoutY="233.0" prefHeight="34.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: #38444C; -fx-text-fill: white;" />
       <ImageView fitHeight="34.0" fitWidth="24.0" layoutX="295.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/user_icon.png" />
@@ -31,7 +30,7 @@
             <Image url="@images/passwordicon.png" />
          </image>
       </ImageView>
-      <Button layoutX="328.0" layoutY="340.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="245.0" stylesheets="@../../../../../Responsive%20Prototype/src/css/Sharp.css" text="Login" textFill="WHITE">
+      <Button fx:id="loginButton" layoutX="328.0" layoutY="340.0" mnemonicParsing="false" onAction="#getLoginDetails" prefHeight="48.0" prefWidth="245.0" stylesheets="@css/Sharp.css" text="Login" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

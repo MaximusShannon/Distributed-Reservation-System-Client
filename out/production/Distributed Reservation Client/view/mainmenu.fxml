@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="315.0" style="-fx-background-color: #292E37;">
+         <children>
+            <Text fill="WHITE" layoutX="16.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tennis Court Reservation">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Text>
+            <Pane layoutX="12.0" layoutY="89.0" prefHeight="5.0" prefWidth="291.0" style="-fx-background-color: white;" />
+            <ImageView fitHeight="24.0" fitWidth="19.0" layoutX="33.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user_icon.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="87.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="profileButton" layoutX="5.0" layoutY="155.0" mnemonicParsing="false" onAction="#loadProfileView" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="27.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/reservation.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="87.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservations">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="reservationsButton" layoutX="5.0" layoutY="216.0" mnemonicParsing="false" onAction="#loadReservationsView" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="31.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/my_reservations.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="91.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Reservations">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="5.0" layoutY="281.0" mnemonicParsing="false" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="#292e37" layoutX="946.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Segoe UI Italic" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="1056.0" layoutY="13.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="130.0" stylesheets="@css/Sharp.css" text="Logout" textFill="WHITE" />
+      <AnchorPane fx:id="injectablePane" layoutX="315.0" layoutY="64.0" prefHeight="735.0" prefWidth="885.0" />
+   </children>
+</AnchorPane>
