@@ -15,6 +15,8 @@ public class MainViewController {
     private Button reservationsButton;
     @FXML
     private Button bookFacilityButton;
+    @FXML
+    private Button myReservationsButton;
 
     @FXML
     private AnchorPane injectablePane;
@@ -38,5 +40,12 @@ public class MainViewController {
 
         AnchorPane bookReservationView = FXMLLoader.load(getClass().getResource("../view/bookfacility_view.fxml"));
         injectablePane.getChildren().setAll(bookReservationView);
+    }
+
+    @FXML
+    private void loadUserReservationsView() throws IOException{
+
+        AnchorPane userReservationsView = FXMLLoader.load(getClass().getResource("../view/myreservations_view.fxml"));
+        injectablePane.getChildren().setAll(userReservationsView);
     }
 }

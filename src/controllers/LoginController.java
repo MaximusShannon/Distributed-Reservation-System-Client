@@ -3,8 +3,12 @@ package controllers;
 import functionality.ClientServerConnection;
 import functionality.LoginRequest;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class LoginController {
 
@@ -19,6 +23,8 @@ public class LoginController {
     private TextField passwordTextField;
     @FXML
     private Button loginButton;
+    @FXML
+    private Button openRegistrationButton;
 
     @FXML
     public void getLoginDetails(){
@@ -32,7 +38,22 @@ public class LoginController {
         System.out.println("Sending Login Request");
         clientServerConnection.startClientLoginRequest(loginRequest);
 
+    }
 
+    @FXML
+    private void openRegistrationStage(){
+
+        try{
+            Stage registerStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("../view/registerview.fxml"));
+            registerStage.setTitle("Hello World");
+            registerStage.setScene(new Scene(root, 900, 500));
+            registerStage.show();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
