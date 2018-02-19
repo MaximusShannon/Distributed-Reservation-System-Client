@@ -2,67 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bf09683-acab-4b74-b812-e2e4ba2d106e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/CalenderController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/LoginController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/MainViewController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/ReservationController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/functionality/ClientServerConnection.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/functionality/LoginRequest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/functionality/Main.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/models/Session.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/models/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/calender.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/css/Sharp.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/css/calenderbuttons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/css/reservation_front_styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/arrow4871.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/facility.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/my_reservations.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/profile_std.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/reservation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/white_triangle.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/mainmenu.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/profile_view.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/reservation.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/reservations_view.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/reservationstage.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/CalenderController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/MainViewController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/ReservationController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/functionality/ClientServerConnection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/functionality/LoginRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/Session.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/calender.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/css/Sharp.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/css/calenderbuttons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/css/reservation_front_styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/arrow4871.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/arrowicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/facility.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/my_reservations.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/passwordicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/profile_std.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/reservation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/user_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/images/white_triangle.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/login.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/mainmenu.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/profile_view.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/reservation.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/reservations_view.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/reservationstage.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/sample.fxml" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/BookFacilityController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/view/bookfacility_view.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/controllers/Controller.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/functionality/Main.java" afterPath="$PROJECT_DIR$/src/functionality/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/views/images/arrowicon.png" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/arrowicon.png" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/views/images/passwordicon.png" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/passwordicon.png" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/views/images/user_icon.png" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/images/user_icon.png" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/views/login.fxml" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/login.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/com/maxshannon/views/sample.fxml" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/sample.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/MainViewController.class" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/controllers/MainViewController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/mainmenu.fxml" afterPath="$PROJECT_DIR$/out/production/Distributed Reservation Client/view/mainmenu.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/MainViewController.java" afterPath="$PROJECT_DIR$/src/controllers/MainViewController.java" />
+      <change beforePath="$PROJECT_DIR$/src/view/mainmenu.fxml" afterPath="$PROJECT_DIR$/src/view/mainmenu.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,17 +20,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/functionality/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mainmenu.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/mainmenu.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="76" column="81" lean-forward="false" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookFacilityController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controllers/BookFacilityController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/MainViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReservationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/ReservationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookfacility_view.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/bookfacility_view.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="173" lean-forward="false" selection-start-line="11" selection-start-column="173" selection-end-line="11" selection-end-column="173" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,6 +104,16 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/controllers/MainViewController.java" />
+        <option value="$PROJECT_DIR$/src/view/mainmenu.fxml" />
+        <option value="$PROJECT_DIR$/src/view/bookfacility_view.fxml" />
+        <option value="$PROJECT_DIR$/src/controllers/BookFacilityController.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -133,18 +155,19 @@
             <path>
               <item name="Distributed Reservation Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Distributed Reservation Client" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Distributed Reservation Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Distributed Reservation Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Distributed Reservation Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Distributed Reservation Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="functionality" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Distributed Reservation Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Distributed Reservation Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -157,6 +180,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\slaye\IdeaProjects\Distributed Reservation Client\src\view\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -291,12 +319,12 @@
       <option name="presentableId" value="Default" />
       <updated>1519042320730</updated>
       <workItem from="1519042325467" duration="64000" />
-      <workItem from="1519042405378" duration="10000" />
+      <workItem from="1519042405378" duration="2036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74000" />
+    <option name="totallyTimeSpent" value="2100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -311,11 +339,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11195652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13059701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -352,9 +380,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/functionality/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="340">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/mainmenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="81" lean-forward="false" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/CalenderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/MainViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/bookfacility_view.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="173" lean-forward="false" selection-start-line="11" selection-start-column="173" selection-end-line="11" selection-end-column="173" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ReservationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/BookFacilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

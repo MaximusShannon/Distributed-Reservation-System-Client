@@ -24,7 +24,7 @@
                   <Image url="@images/user_icon.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="87.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+            <Text fill="WHITE" layoutX="88.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -39,7 +39,7 @@
                   <Image url="@images/reservation.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="87.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservations">
+            <Text fill="WHITE" layoutX="88.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservations">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -54,12 +54,27 @@
                   <Image url="@images/my_reservations.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="91.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Reservations">
+            <Text fill="WHITE" layoutX="88.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Reservations">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Text>
             <Button layoutX="5.0" layoutY="281.0" mnemonicParsing="false" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="WHITE" layoutX="88.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Facility">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="19.0" layoutX="33.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/book_reservation.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bookFacilityButton" onAction="#loadBookReservationView" layoutX="5.0" layoutY="343.0" mnemonicParsing="false" opacity="0.0" prefHeight="60.0" prefWidth="301.0" stylesheets="@css/reservation_front_styles.css">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="735.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BookFacilityController">
+   <children>
+      <Pane prefHeight="138.0" prefWidth="885.0" style="-fx-background-color: #3A4049;">
+         <children>
+            <Text fill="WHITE" layoutX="58.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Facility">
+               <font>
+                  <Font name="Segoe UI Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#3a4049" layoutX="36.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Facility">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="facilityPicker" layoutX="36.0" layoutY="194.0" prefHeight="25.0" prefWidth="229.0" />
+      <Text fill="#3a4049" layoutX="36.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Date">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="datePicker" layoutX="36.0" layoutY="260.0" prefHeight="25.0" prefWidth="229.0" />
+      <ChoiceBox fx:id="timePicker" layoutX="37.0" layoutY="336.0" prefHeight="25.0" prefWidth="118.0" />
+      <Text fill="#3a4049" layoutX="36.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Time">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#3a4049" layoutX="36.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note, some times may not be available.">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="279.0" layoutY="454.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="328.0" stylesheets="@css/Sharp.css" text="Reserve" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="unavailableText" fill="RED" layoutX="313.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This reservation is unavailable, please try again.">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
