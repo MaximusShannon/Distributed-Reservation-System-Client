@@ -8,4 +8,9 @@ public class Session implements Serializable {
 
   public static User userSession;
 
+  public static void resetSession(){
+
+      userSession = null;
+  }
+
 }

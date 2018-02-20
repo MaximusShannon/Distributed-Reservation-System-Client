@@ -86,6 +86,7 @@ public class RegisterController {
             loginStage.setTitle("Hello World");
             loginStage.setScene(new Scene(root, 900, 500));
             loginStage.show();
+            closeStage();
 
         }catch (Exception e){
             e.printStackTrace();
