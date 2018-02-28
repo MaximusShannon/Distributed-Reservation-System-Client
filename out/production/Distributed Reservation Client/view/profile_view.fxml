@@ -9,8 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="735.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="735.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProfileController">
    <children>
       <Pane prefHeight="138.0" prefWidth="885.0" style="-fx-background-color: #3A4049;">
          <children>
@@ -24,7 +23,7 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="750.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user_id_set">
+            <Text fx:id="userIdText" fill="WHITE" layoutX="750.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user_id_set">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -66,34 +65,34 @@
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="177.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName" wrappingWidth="335.1728515625">
+      <Text fx:id="firstNameText" layoutX="177.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName" wrappingWidth="335.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="177.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SecondName" wrappingWidth="335.1728515625">
+      <Text fx:id="secondNameText" layoutX="177.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SecondName" wrappingWidth="335.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="177.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="335.1728515625">
+      <Text fx:id="roleText" layoutX="177.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="335.1728515625">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="177.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserType" wrappingWidth="335.1728515625">
+      <Text fx:id="userTypeText" fill="#11ff00" layoutX="177.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserType" wrappingWidth="335.1728515625">
          <font>
-            <Font name="Segoe UI" size="14.0" />
+            <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Text>
-      <TextField layoutX="177.0" layoutY="362.0" prefHeight="27.0" prefWidth="328.0" promptText="Mobile Number" style="-fx-border-color: #292E37;" />
-      <TextField layoutX="177.0" layoutY="408.0" prefHeight="27.0" prefWidth="328.0" promptText="example@example.ie" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="mobileNumberTextField" layoutX="177.0" layoutY="362.0" prefHeight="27.0" prefWidth="328.0" promptText="Mobile Number" style="-fx-border-color: #292E37;" />
+      <TextField fx:id="emailTextField" layoutX="177.0" layoutY="408.0" prefHeight="27.0" prefWidth="328.0" promptText="example@example.ie" style="-fx-border-color: #292E37;" />
       <Button layoutX="177.0" layoutY="569.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="328.0" stylesheets="@css/Sharp.css" text="Update Profile" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <PasswordField layoutX="177.0" layoutY="452.0" prefHeight="25.0" prefWidth="328.0" promptText="Password" style="-fx-border-color: #292E37;" />
-      <PasswordField layoutX="177.0" layoutY="497.0" prefHeight="25.0" prefWidth="328.0" promptText="Retype Password" style="-fx-border-color: #292E37;" />
+      <PasswordField fx:id="passwordOne" layoutX="177.0" layoutY="452.0" prefHeight="25.0" prefWidth="328.0" promptText="Password" style="-fx-border-color: #292E37;" />
+      <PasswordField fx:id="passwordTwo" layoutX="177.0" layoutY="497.0" prefHeight="25.0" prefWidth="328.0" promptText="Retype Password" style="-fx-border-color: #292E37;" />
    </children>
 </AnchorPane>

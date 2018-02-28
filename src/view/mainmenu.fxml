@@ -86,7 +86,7 @@
             <Font name="Segoe UI Italic" size="18.0" />
          </font>
       </Text>
-      <Button fx:id="logoutButton" onAction="#logout" layoutX="1056.0" layoutY="13.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="130.0" stylesheets="@css/Sharp.css" text="Logout" textFill="WHITE" />
+      <Button fx:id="logoutButton" layoutX="1056.0" layoutY="13.0" mnemonicParsing="false" onAction="#logout" prefHeight="43.0" prefWidth="130.0" stylesheets="@css/Sharp.css" text="Logout" textFill="WHITE" />
       <AnchorPane fx:id="injectablePane" layoutX="315.0" layoutY="64.0" prefHeight="735.0" prefWidth="885.0" />
    </children>
 </AnchorPane>
